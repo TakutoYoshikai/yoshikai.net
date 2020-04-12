@@ -1,5 +1,14 @@
+* {
+  font-family: 'Dosis', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", cursive;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+a {
+  color: gray;
+}
 body {
   background-color: #f8f8f8;
+  padding-bottom: 130px;
 }
 .name {
   font-family: 'Dosis', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", cursive;
@@ -45,6 +54,9 @@ body {
 @media screen and (max-width: 800px) {
   .work {
     width: 400px!important;
+    height: 320px!important;
+    margin-left: 0!important;
+    margin-right: 0!important;
   }
 }
 
@@ -74,8 +86,30 @@ body {
   padding: 5px;
   font-size: 12px;
   color: white;
+  text-align: center;
+  width: 100%;
 }
 
 .work-title {
   font-size: 16px;
+  font-weight: bold;
+}
+
+
+.profile-section {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+}
+
+.profile-section > p {
+  font-size: 17px;
+  margin: 3px;
+  line-height: 30px;
+}
+
+.profile-title {
+  margin-top: 40px!important;
+  font-weight: bold;
 }
