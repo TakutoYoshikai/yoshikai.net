@@ -1,0 +1,18 @@
+{
+  "name": "portfolio-3",
+  "authors": [
+    "takuto <takuto.yoshikai@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "https://yoshikai.net",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
