@@ -15,13 +15,14 @@
     <meta name="description" content="プログラマー吉開拓人の関わったプロジェクト、個人作品">
     <link rel="icon" type="image/png" href="./images/favicon.png" sizes="32x32">
     <title>Takuto Yoshikai's Portfolio</title>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <div class="name-section">
       <p class="name">TAKUTO YOSHIKAI</p>
       <p class="job">SOFTWARE CREATOR / HACKER</p>
     </div>
-    <div class="works">
+    <div class="works" data-aos="fade-up">
       <div class="row">
         <div class="work" ontouchstart="">
           <a href="https://gatebox.ai">
@@ -112,7 +113,7 @@
         </div>
       </div>
     </div>
-    <div class="profile-section">
+    <div class="profile-section" data-aos="fade-up">
       <p class="profile-title">School</p>
       <p>
       <a href="https://code.ac.jp">コードアカデミー高等学校</a><br>
@@ -136,5 +137,9 @@
         takuto@yoshikai.net
       </p>
     </div>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
