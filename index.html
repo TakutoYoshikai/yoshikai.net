@@ -15,6 +15,20 @@
     <title>Takuto Yoshikai</title>
   </head>
   <body>
+    <script>
+      var language = (window.navigator.languages && window.navigator.languages[0]) ||
+         window.navigator.language ||
+         window.navigator.userLanguage ||
+         window.navigator.browserLanguage;
+var languages = window.navigator.languages || [
+         window.navigator.language ||
+         window.navigator.userLanguage ||
+         window.navigator.browserLanguage
+      ];
+      if (!languages.includes("ja-JP")) {
+        location.href = "/en.html";
+      }
+    </script>
     <div class="name-section">
       <p class="name">TAKUTO YOSHIKAI</p>
       <p class="job">SOFTWARE CREATOR / HACKER</p>
