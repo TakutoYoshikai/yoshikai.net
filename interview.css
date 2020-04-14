@@ -12,8 +12,8 @@ body {
 }
 
 .message {
-  display: flex;
   display: -webkit-flex;
+  display: flex;
   -webkit-justify-content: left;
   justify-content: left;
   margin-bottom: 10px;
@@ -38,6 +38,7 @@ body {
 }
 
 .my-message {
+  display: -webkit-flex;
   display: flex;
   margin-bottom: 10px;
   -webkit-justify-content: right;
