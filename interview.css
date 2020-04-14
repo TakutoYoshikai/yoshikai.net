@@ -4,6 +4,8 @@
   margin-left: auto;
   margin-right: auto;
   background-color: #BCE;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .message {
@@ -33,11 +35,11 @@
   justify-content: right;
 }
 
-.message-me .message-text {
+.my-message .message-text {
   background-color: white;
   color: black;
   border-radius: 10px;
   line-height: 25px;
   padding: 5px;
-  
 }
+

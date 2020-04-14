@@ -8,7 +8,7 @@ function myMessage(text) {
 function yourMessage(text) {
   return `<div class="my-message">
     <div class="message-text">${text}</div>
-    <img src="images/takuto-meshi.png" class="message-icon">
+    <img src="images/yuta.jpg" class="message-icon">
   </div>`
 }
 
@@ -23,11 +23,15 @@ function chat(messages) {
 document.getElementById("chat").innerHTML = chat([
   {
     my: true,
-    text: "Hello"
+    text: "ゆたぴー元気？"
   },
   {
     my: false,
-    text: "Hey"
+    text: "元気だよーたくと君は？"
+  },
+  {
+    my: true,
+    text: "元気だよ"
   },
 
 ])
