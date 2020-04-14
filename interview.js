@@ -12,6 +12,14 @@ function yourMessage(text) {
   </div>`
 }
 
+function image(src) {
+  return `<div class="message">
+    <img src="images/takuto-meshi.png" class="message-icon">
+    <div class="message-text">
+      <img class="message-image" src="${src}">
+    </div>
+  </div>`
+}
 function title(text) {
   return `<div class="center">
     <p class="title">
@@ -28,6 +36,8 @@ function chat(messages) {
       return a + yourMessage(b.text);
     } else if (b.type === "t") {
       return a + title(b.text);
+    } else if (b.type === "i") {
+      return a + image(b.text);
     }
   }, "")
 }
