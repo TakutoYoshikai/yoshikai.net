@@ -1,0 +1,43 @@
+
+.chat {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #BCE;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.message-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 17px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.message-text {
+  background-color: #00B900;
+  color: black;
+  border-radius: 10px;
+  line-height: 25px;
+  padding: 5px;
+}
+
+.my-message {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: right;
+}
+
+.message-me .message-text {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  line-height: 25px;
+  padding: 5px;
+  
+}
