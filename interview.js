@@ -1,14 +1,14 @@
 function myMessage(text) {
-  return `<div class="message">
-    <img src="images/takuto-meshi.png" class="message-icon">
+  return `<div class="my-message">
     <div class="message-text">${text}</div>
+    <img src="images/yuta.jpg" class="message-icon">
   </div>`
 }
 
 function yourMessage(text) {
-  return `<div class="my-message">
+  return `<div class="message">
+    <img src="images/takuto-meshi.png" class="message-icon">
     <div class="message-text">${text}</div>
-    <img src="images/yuta.jpg" class="message-icon">
   </div>`
 }
 
@@ -21,25 +21,43 @@ function title(text) {
 }
 
 function chat(messages) {
-  return title("趣味について") + messages.reduce(function(a, b) {
-    if (b.my) {
+  return messages.reduce(function(a, b) {
+    if (b.type === "m") {
       return a + myMessage(b.text);
+    } else if (b.type === "y") {
+      return a + yourMessage(b.text);
+    } else if (b.type === "t") {
+      return a + title(b.text);
     }
-    return a + yourMessage(b.text);
   }, "")
 }
-document.getElementById("chat").innerHTML = chat([
-  {
-    my: true,
-    text: "ゆたぴー元気？"
-  },
-  {
-    my: false,
-    text: "元気だよーたくと君は？"
-  },
-  {
-    my: true,
-    text: "元気だよ"
-  },
 
-])
+function csvToChat(csv) {
+  return csv.split("\n").map(function(msg) {
+    if (msg === "") {
+      return null;
+    }
+    return {
+      type: msg[0],
+      text: msg.slice(1)
+    }
+  }).filter(function(msg) {
+    return msg !== null;
+  })
+}
+
+function getChatTexts() {
+  return new Promise(function(resolve, reject) {
+    var req = new XMLHttpRequest();
+    req.open("GET", "interview.csv", true);
+    req.send(null);
+    req.onload = function() {
+      var text = req.responseText;
+      resolve(text);
+    }
+  })
+}
+
+getChatTexts().then(function(text) {
+  document.getElementById("chat").innerHTML = chat(csvToChat(text))
+})

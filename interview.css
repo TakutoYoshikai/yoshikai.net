@@ -27,6 +27,7 @@
   border-radius: 10px;
   line-height: 25px;
   padding: 5px;
+  max-width: 280px;
 }
 
 .my-message {
