@@ -1,6 +1,6 @@
 
 body {
-  background-color: #BCE;
+  background-color: #9AC;
 }
 
 .chat {
@@ -29,7 +29,7 @@ body {
 }
 
 .message-text {
-  background-color: #8ED156;
+  background-color: #9EE166;
   color: black;
   border-radius: 10px;
   line-height: 25px;
