@@ -12,8 +12,16 @@ function yourMessage(text) {
   </div>`
 }
 
+function title(text) {
+  return `<div class="center">
+    <p class="title">
+      ${text}
+    </p>
+  </div>`
+}
+
 function chat(messages) {
-  return messages.reduce(function(a, b) {
+  return title("趣味について") + messages.reduce(function(a, b) {
     if (b.my) {
       return a + myMessage(b.text);
     }
