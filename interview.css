@@ -42,9 +42,6 @@ body {
 .my-message .message-text {
   background-color: white;
   color: black;
-  border-radius: 10px;
-  line-height: 25px;
-  padding: 5px;
 }
 
 .center {
