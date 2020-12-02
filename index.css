@@ -80,6 +80,7 @@ body {
 }
 
 .work-detail {
+  letter-spacing: 1px!important;
   position: absolute;
   display:none;
   top: 0;
@@ -106,12 +107,14 @@ body {
 }
 
 .profile-section > p {
-  font-size: 17px;
+  font-size: 14px;
   margin: 3px;
   line-height: 30px;
+  letter-spacing: 1px!important;
 }
 
 .profile-title {
   margin-top: 40px!important;
   font-weight: bold;
 }
+
