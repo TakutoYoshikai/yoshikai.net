@@ -6,7 +6,7 @@ function secret() {
   for (let j = 0; j <= i; j++) {
     text += "SUPER ";
   }
-  text += "LUCKY!!!";
+  text += "LUCKY today!!!";
   const audio = new Audio("https://yoshikai.net/sounds/dodon.mp3");
   audio.play().then(function() {
     alert(text);
