@@ -8,8 +8,9 @@ function secret() {
   }
   text += "LUCKY!!!";
   const audio = new Audio("https://yoshikai.net/sounds/dodon.mp3");
-  audio.play();
-  alert(text);
+  audio.play().then(function() {
+    alert(text);
+  });
 }
 
 window.onload = function() {
