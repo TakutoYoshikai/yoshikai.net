@@ -119,3 +119,7 @@ body {
   font-weight: bold;
 }
 
+.read-more {
+  text-decoration: underline;
+  letter-spacing: 0px!important;
+}
