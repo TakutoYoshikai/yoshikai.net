@@ -120,6 +120,6 @@ body {
 }
 
 .read-more {
-  text-decoration: underline;
+  text-decoration: underline!important;
   letter-spacing: 0px!important;
 }
