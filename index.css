@@ -103,6 +103,7 @@ body {
 .work-detail p {
   letter-spacing: 1px!important;
   color: white;
+  padding-top: 0;
   padding-left: 6px;
   padding-right: 6px;
 }
