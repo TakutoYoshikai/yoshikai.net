@@ -1,12 +1,13 @@
 let step = 0;
 
+const messages = [
+  "I love Nuru!♥",
+  "Aku cinta kamu! Nuru!",
+  "大好きだよ。Nuru!😊"
+];
 function secret() {
   const i = Math.floor(Math.random() * 3);
-  let text = "You are ";
-  for (let j = 0; j <= i; j++) {
-    text += "SUPER ";
-  }
-  text += "LUCKY today!!!";
+  const text = messages[i];
   const audio = new Audio("https://yoshikai.net/sounds/dodon.mp3");
   audio.play().then(function() {
     alert(text);
