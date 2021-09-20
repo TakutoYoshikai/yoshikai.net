@@ -32,6 +32,8 @@
     <script>
       function play() {
         document.getElementById("content").classList.remove("hide");
+        document.getElementById("play").remove();
+
         AOS.init({
           duration: 1800,
         });
@@ -48,7 +50,7 @@
       <p class="name">Dear Nurhayati Solihah</p>
       <p class="job">The most beautiful girl</p>
     </div>
-    <div class="play" onclick="play()">
+    <div id="play" class="play" onclick="play()">
       PLAY
     </div>
     <div class="hide" id="content" data-aos="fade-up">
