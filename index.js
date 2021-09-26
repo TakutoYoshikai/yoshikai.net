@@ -6,12 +6,15 @@ const messages = [
   "大好きだよ。Nuru!😊"
 ];
 function secret() {
+  /*
   const i = Math.floor(Math.random() * 3);
   const text = messages[i];
   const audio = new Audio("https://yoshikai.net/sounds/dodon.mp3");
   audio.play().then(function() {
     alert(text);
   });
+  */
+  window.location.href = "https://yoshikai.net/nuru";
 }
 
 window.onload = function() {
