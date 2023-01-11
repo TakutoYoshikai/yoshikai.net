@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HONJA: The Hiragana Transliterator 「ほんじゃ」多言語かな翻字サービス</title>
+    <meta name="keywords" content="言語,多言語,タイ語,韓国語,アラビア語,ヘブライ語,ロシア語,キリル文字,グルジア,アルメニア,ヒンディー, デーヴァナーガリー,シンハラ,タミル,チベット">
+    <meta name="description" content="ひらがな・カタカナの音を、他の言語の文字を使って表す「翻字（ほんじ）
+」サービスです。">
+
+    <meta property="og:title" content="HONJA: The Hiragana Transliterator 「ほんじゃ」多言語かな翻字サービ
+ス">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="Describes Japanese sounds using other language characters ひらがな・カタカナの音を、他の言語の文字を使って表す「翻字（ほんじ）」サービスです。">
+    <meta property="og:url" content="http://yoshikai.net/honja/">
+    <meta property="og:image" content="http://yoshikai.net/honja/honja.png">
+    <meta property="og:site_name" content="HONJA:「ほんじゃ」多言語かな翻字サービス">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./app.js"></script>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h2 class="service-title">HONJA - 多言語ひらがな翻字サービス</h2>
+      <div class="try-honja container">
+        <input type="text" id="input-text" placeholder="ひらがなかカタカナをいれてください" />
+        <button id="try-honja" onclick="tryHonja()">Try HONJA!</button>
+      </div>
+      <div class="result container">
+        <table id="honja-result">
+        </table>
+      </div>
+      <div id="source" class="container">
+      </div>
+    </main>
+  </body>
+</html>
