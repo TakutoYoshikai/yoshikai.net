@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>COWAKÉ</title>
+    <script src="bower_components/papaparse/papaparse.min.js"></script>
+    <script src="node_modules/tablesort/dist/tablesort.min.js"></script>
+    <script src="node_modules/tablesort/dist/sorts/tablesort.number.min.js"></script>
+    <script src="cowake.js"></script>
+    <link rel="stylesheet" href="node_modules/tablesort/tablesort.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="center">
+        <img src="images/cowake.png" width="300">
+      </div>
+      <div class="description">
+        <p>
+          COWAKÉ is an application that generates the number of rooms, the number of people assigned, and the combination table so that members will never meet with the same person again, when you divide the participants into several rooms (groups) and have several breakout sessions.
+        </p>
+      </div>
+      <table id="params-table">
+        <tr>
+          <td>Minimum members</td>
+          <td><span class="pm-button" id="m-min-members">-</span><input type="number" id="minMembers" value="3"><span class="pm-button" id="p-min-members">+</span></td>
+        </tr>
+        <tr>
+          <td>All members</td>
+          <td><span class="pm-button" id="m-member-count">-</span><input type="number" id="member-count" value="50"><span class="pm-button" id="p-member-count">+</span></td>
+          <td><span class="confirm" id="confirm">Simulate</span></td>
+        </tr>
+      </table>
+      <div id="params-result"></div>
+      Member List(Max 3 rows, separated by tabs)<input type="button" id="enter-example" value="Try with dummy data"><br>
+      <textarea id="tsv"></textarea>
+      <br>
+      <div class="center">
+        <input type="button" id="submit" value="Show combinations">
+      </div>
+    </div>
+
+    <div id="group-info"></div>
+    <br>
+    <p id="download" style="display:none"><a href="javascript:void(0)" onclick="onCSVDownload(this, document.getElementById('group'), 'table.csv');">Download CSV</a></p>
+    <br>
+    <div id="result-wrapper">
+      <div id="result"></div>
+    </div>
+    <script>
+    function onCSVDownload(a, table, filename) {
+      var escaped = /\t|\r?\n|\r|"/;
+      var e = /"/g;
+      var bom = new Uint8Array([0xEF, 0xBB, 0xBF]);
+      var csv = [], row = [], field, r, c;
+      for (r=0;  r<table.rows.length; r++) {
+        row.length = 0;
+        for (c=0; c<table.rows[r].cells.length; c++) {
+          field = table.rows[r].cells[c].textContent;
+          row.push(escaped.test(field)? '"'+field.replace(e, '""')+'"': field);
+        }
+        csv.push(row.join('\t'));
+      }
+      var blob = new Blob([bom, csv.join('\n')], {'type': 'text/csv'});
+      if (window.navigator.msSaveBlob) {
+        window.navigator.msSaveBlob(blob, filename);
+      } else {
+        a.download = filename;
+        a.href = window.URL.createObjectURL(blob);
+      }
+    }
+
+    </script>
+    <p class="copyright">Copyright© 2020 Takuto Yoshikai. All Rights Reserved.</p>
+    <p class="privacypolicy">No personal data will be recorded in the system.</p>
+    <p class="about"><a href="https://github.com/TakutoYoshikai/cowake-readme" target="_blank">about COWAKÉ</a></p>
+      <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+      <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script src="./cowake-offline.js" type="text/babel"></script>
+  </body>
+</html>

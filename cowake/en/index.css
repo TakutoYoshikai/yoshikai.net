@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Corp";
+  src: url("corp.ttf");
+}
+
+h1 {
+  font-family: none;
+}
+body {
+  background-color: #fef6e4;
+}
+* {
+  border-color: #001858 !important;
+  color: #001858;
+}
+.room {
+  border: solid 2px #000;
+}
+
+textarea {
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  resize: none;
+  margin-top: 5px;
+  padding: 6px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+  -moz-appearance:textfield;
+  width: 30px;
+  height: 29px;
+  text-align: center;
+  margin-right: 3px;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+
+.pm-button {
+  width: 30px;
+  border: #BBB solid 2px;
+  border-radius: 5px;
+  display: inline-block;
+  height: 31px;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 3px;
+  user-select: none;
+  margin-bottom: 10px;
+}
+
+.pm-button:hover {
+  background: #CCC;
+  color: white;
+}
+
+#submit {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border: 2px solid;
+  border-radius: 5px;
+  width: 170px;
+  height: 40px;
+}
+
+.center {
+  text-align: center;
+}
+.main {
+  width: 420px;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  border: 2px solid;
+  border-left: 1px solid;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+table th,
+table th,
+table td {
+  padding: 20px 10px;
+  border-bottom: 1px solid;
+  background-color: white;
+}
+table th {
+  background-color: #DDD;
+}
+table th + th,
+table td {
+  border-left: 1px solid;
+}
+table tr:last-child th,
+table tr:last-child td {
+  border-bottom: none;
+}
+
+th:first-child {
+  border-left: 1px solid;
+  
+}
+
+select {
+  border-radius: 5px;
+  width: 180px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+#params-table {
+  border: none;
+}
+#params-table td {
+  border: none;
+  background: none;
+  width: 160px;
+  padding: 5px;
+}
+
+.confirm {
+  width: 90px;
+  border: #BBB solid 2px;
+  border-radius: 5px;
+  display: inline-block;
+  height: 31px;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 3px;
+  user-select: none;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.copyright {
+  font-size: 12px !important;
+  text-align: center;
+}
+
+#enter-example {
+  width: 180px;
+  float:right;
+  height: 40px;
+  margin-left: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.privacypolicy {
+  font-size: 12px !important;
+  text-align: center;
+}
+
+.about {
+  text-align: center;
+}
+.about > a {
+  font-family: "Helvetica Neue", sans-serif!important;
+}
+
+#download {
+  text-align: center;
+}
+
+.description {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
