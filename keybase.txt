@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/takutoyoshikai
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://yoshikai.net
+  * I am takutoyoshikai (https://keybase.io/takutoyoshikai) on keybase.
+  * I have a public key with fingerprint DD69 0961 6B1C B79D E0D8  B4D5 D3D2 CBF1 8B39 B085
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101ceb20abd9ec7d05e019990fd192f4e288179c2b40befcf1798989073d41857190a",
+      "fingerprint": "dd6909616b1cb79de0d8b4d5d3d2cbf18b39b085",
+      "host": "keybase.io",
+      "key_id": "d3d2cbf18b39b085",
+      "kid": "0101ceb20abd9ec7d05e019990fd192f4e288179c2b40befcf1798989073d41857190a",
+      "uid": "86eac259a8b53f8ab824d5372ed61519",
+      "username": "takutoyoshikai"
+    },
+    "service": {
+      "hostname": "yoshikai.net",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1688207056,
+  "expire_in": 157680000,
+  "prev": "9d7d677fd06da10cfc63158b99a9da31a2eeccaab47a21191ea161f520be422c",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMIuAnicrZJ9aI1RHMfv9Xa5KCJEkqeUcVvnPM99nuec63VGoRQjtoXbOc85z+7T
+tue57n3uWNeUoitpSV5GiSllXkO5E7FxtdjKS1NI2NoM5SVkNQ3nWfOfP53zx+l3
+fp/f93zPr19u7FBf0N/Y/GDf3mnNC/2tzcdTPnbi16O0RB1WLUXSUjkfOHgF40k3
+Wm4xKSIBCKDBqQwIZZgbOgMqBxBjDEwGsWyGuYwQ1LEh0zCg3DRMESCxga6wMESq
+DjEgUkgyLbuMJ+IJy3aFLGMaBliDGoUG1THjgCEaZipTmGxQEyKqYAqQKgpjTtKr
+EOYoSfJ8yxF3IogO2PsH/599pwbkkMaJIauYIKoqJiIUycKtosucaVCF2AOTPGGT
+Si5ol5SnXKfaScascmJJNSFJ5Kosg3vt9f4zyP0l8m3uCoV4wnEdw6kQmZjrxpMR
+r9KtjnvoVk6jgyJRatlMdFNUVPFE0nJsKQIFabiWpwo1hGSgA1ULSXxb3ErwqOUR
+qq4hIJb3Dq8SkpjpTNN1kwGNEQgM09AUqCKKMcGMKJDInBsGITSsExlCDDmBGjRV
+WfQrLMuG5H1ri+1IEVXYJGVCMmmV2cRNJbhUc6dp4zCfP+gbMXyIN2W+4Khxf2dv
+9uFA/8TuH4c+7A3oF5bOaBv/smHVzCXZnic/vqJg5lJBuOFU2/LM/qctheqGOZ/W
+FU8ZcWr6rc5ZRz+9Dc7N9dV+XHPmQ6o4e3adc31u/fbHtUpPV8GTd3kz7z2DeaMP
+TNXq9hxcxR+n6ycsft55rOVFyeqfK2JjvrtVGbOitKevZGvNa21D0fwpm26HrtrH
+K4dpp2PBk+9j7080tr/a15HdGCrrn1d6/aa/v2t3+8iPu+5ezrY3ZS9m1qfehHNX
+7i7LHFB6u9K1K3/Pbyq6tvn+t5Zn49Dvwry60uLzuPBLd6Ud2LWzM3Bu6rSO9IL9
+udYFR3aU1Kcm9R/+PP5h7unQG4t6J9/OLFxb8AdX4U75
+=t9K9
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/takutoyoshikai
+
+==================================================================
+
