@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:url" content="https://yoshikai.net/index.html">
+    <meta property="og:title" content="TAKUTO YOSHIKAI">
+    <meta property="og:image" content="https://yoshikai.net/img/ogp.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="Software Engineer Takuto Yoshikai">
+    <meta name="keywords" content="TakutoYoshikai">
+    <meta name="description" content="Software Engineer Takuto Yoshikai">
+    <title>Software Engineer Takuto Yoshikai</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+* {
+  font-family: "Yu Gothic", "Meiryo", sans-serif;
+}
+
+b {
+  color: #333;
+}
+
+header {
+  height: 4rem;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+      header h2 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #555555;
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 4px;
+      }
+
+      main > div{
+        width: 90%;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 120px;
+      }
+
+      main > div > h2 {
+        font-size: 18px;
+        color: #555;
+        text-align: center;
+      }
+
+      main > div {
+        margin-bottom: 160px;
+      }
+      #profile {
+        text-align: center;
+      }
+      #profile > p {
+        line-height: 24px;
+        text-align: center;
+        font-size: 12px;
+      }
+
+      #profile > img {
+        width: 100px;
+        height: 100px;
+        border: 2px solid #555;
+        border-radius: 50%;
+      }
+
+      .greeting {
+        margin-top: 60px;
+        font-size: 14px;
+      }
+      .greeting p {
+        text-align: left;
+        line-height: 20px;
+        margin-bottom: 40px;
+      }
+
+      #achievement {
+      }
+
+      .achievement {
+        margin: 30px;
+      }
+      .achievement h2 {
+        font-size: 24px;
+        color: #333;
+      }
+
+      .achievement p {
+        font-size: 16px;
+      }
+      .achievement a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+      }
+
+      #work .section {
+        margin: 60px;
+      }
+      #work .sub-title {
+        font-size: 18px;
+        color: #333;
+        text-align: left;
+      }
+
+      #work .section ul li {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      #work .status {
+        text-align: center;
+        margin-bottom: 80px;
+      }
+
+      #contact {
+        margin-bottom: 120px;
+      }
+      #contact p {
+        text-align: center;
+        font-size: 14px;
+      }
+      #contact p a {
+        font-weight: bold;
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      footer p {
+        font-size: 12px;
+      }
+
+
+      @media (max-width: 768px) {
+         main > div {
+           margin-top: 0px;
+         }
+         #profile h2 {
+           margin-top: 0;
+         }
+          nav {
+              display: none;
+          }
+      }
+    </style>
+    <script>
+      function calculateAge(birthDate) {
+        const today = new Date();
+        const birthYear = birthDate.getFullYear();
+        const birthMonth = birthDate.getMonth();
+        const birthDay = birthDate.getDate();
+        let age = today.getFullYear() - birthYear;
+        if (
+          today.getMonth() < birthMonth || 
+          (today.getMonth() === birthMonth && today.getDate() < birthDay)
+        ) {
+          age--;
+        }
+
+        return age;
+      }
+    </script>
+  </head>
+<body>
+    <script>
+      AOS.init();
+    </script>
+    <header>
+        <h2>Software Engineer Takuto Yoshikai</h2>
+    </header>
+
+    <nav class="container">
+        <a href="#profile">Profile</a>
+        <a href="#achievement">Achievements</a>
+        <a href="#work">Work Opportunities</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main class="container">
+        <div id="profile">
+            <h2>Profile</h2>
+            <img src="./img/takuto-meshi.png">
+            <p>Born in 1997 (Age <script>document.write(calculateAge(new Date(1997, 11, 13)))</script>)<br>Graduated from Keio University, Faculty of Policy Management<br>Specialty: IT system development</p>
+
+            <div class="greeting" data-aos="fade-up" data-aos-duration="1400">
+              <p>
+              Aspiring to be a software developer since middle school, I have engaged in numerous development projects during high school. Not limited to the role of a web engineer, I pursued higher education at Keio University, majoring in Artificial Intelligence and Security Technologies. As a freelance engineer, I have developed web services, robots, and mobile applications, while also contributing to security product development at my first employer.
+              </p>
+              <p>
+My strengths as an engineer include dedicating time to deep learning, focusing on design details, and delivering quick outputs.
+              </p>
+
+              <p>
+Amid the evolving possibilities brought by generative AI, there has been an increase in scenarios where IT engineering quality is unclear. However, I remain committed to uncompromisingly delivering high-quality and robust systems.
+              </p>
+
+              <p>
+If you are considering realizing services utilizing cutting-edge technology, feel free to consult with me, Takuto Yoshikai.
+              </p>
+              
+            </div>
+        </div>
+        
+        <div id="achievement" data-aos="fade-up" data-aos-duration="1400">
+            <h2>Achievements</h2>
+            <div class="achievement">
+              <h2>10 Years</h2>
+              <p>Since starting my career in software development, <a href="https://www.wantedly.com/id/TakutoYoshikai">details</a></p>
+            </div>
+            <div class="achievement">
+              <h2>12 Clients, 14 Projects</h2>
+              <p>In 10 years, I participated in <a href="https://resume.yoshikai.net">projects</a></p>
+            </div>
+            <div class="achievement">
+              <h2>217 Repositories</h2>
+              <p>Repositories I have developed and published on <a href="https://github.com/TakutoYoshikai">Github</a></p>
+            </div>
+            <div class="achievement">
+              <h2>2 Services</h2>
+              <p>Web services I released individually, <a href="https://yoshikai.net/honja">details</a></p>
+            </div>
+        </div>
+        
+        <div id="work" data-aos="fade-up" data-aos-duration="1400">
+            <h2>Work Opportunities</h2>
+            <p class="status">Current Status: <b>Available for contract work in December ✅</b></p>
+            <div class="section">
+              <h2 class="sub-title">Available Services</h2>
+              <ul>
+                <li>Web Design</li>
+                <li>Web Service Development (Frontend)</li>
+                <li>Web Service Development (Backend)</li>
+                <li>Infrastructure Setup</li>
+                <li>Security Consulting</li>
+                <li>Security Product Development</li>
+              </ul>
+            </div>
+            <div class="section">
+              <h2 class="sub-title">Skills</h2>
+              <ul>
+                <li>Vulnerability Assessment</li>
+                <li>Generative AI</li>
+                <li>Networking</li>
+                <li>Linux</li>
+                <li>GCP・AWS</li>
+              </ul>
+            </div>
+        </div>
+        
+        <div id="contact" data-aos="fade-up" data-aos-duration="1400">
+            <h2>Contact</h2>
+            <p><a href="https://facebook.com/takuto.yoshikai">Facebook</a> ・ <a href="mailto:takuto.yoshikai@gmail.com">Email</a> ・ <a href="https://linkedin.com/in/takutoyoshikai">LinkedIn</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright 2024 3hacks Takuto Yoshikai</p>
+    </footer>
+</body>
+</html>
+
