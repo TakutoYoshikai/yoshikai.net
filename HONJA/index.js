@@ -135,7 +135,7 @@ function renderResultTable(result) {
 function tryHonja() {
   let text = document.getElementById("input-text").value.replaceAll("<", "").replaceAll(">", "").replaceAll("'", "").replaceAll("\"", "").replaceAll("&");
   if (text.trim() === "") {
-    text = "ひらがなかカタカナをいれてください";
+    text = "しぶや　しんじゅく　あきはばら";
     document.getElementById("input-text").value = text;
   }
   let result = honja.convertAll(text);

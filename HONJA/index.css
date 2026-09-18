@@ -29,13 +29,55 @@ main {
   min-width: 320px;
 }
 
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 60%;
+  min-width: 160px;
+}
+
+.speech-bubble {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 0;
+  background-color: white;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  white-space: normal;
+  max-width: 260px;
+  box-shadow: 0px 0px 15px -5px #777777;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  border: 6px solid transparent;
+  border-top-color: white;
+}
+
+.input-wrapper:hover .speech-bubble {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 input[type=text] {
   border: 0;
   padding: 0 10px;
   line-height: 40px;
   font-size: 1.0rem;
-  width: 60%;
-  min-width: 160px;
+  width: 100%;
+  box-sizing: border-box;
   margin: 0;
   -webkit-box-shadow: 0px 0px 15px -5px #777777;
   -moz-box-shadow: 0px 0px 15px -5px #777777;

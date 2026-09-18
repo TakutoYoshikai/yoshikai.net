@@ -23,7 +23,10 @@
     <main>
       <h2 class="service-title">HONJA - 多言語ひらがな翻字サービス</h2>
       <div class="try-honja container">
-        <input type="text" id="input-text" placeholder="ひらがなかカタカナをいれてください" />
+        <div class="input-wrapper">
+          <div id="input-tooltip" class="speech-bubble">人や場所の名前をひらがなか、カタカナで入れてください</div>
+          <input type="text" id="input-text" placeholder="しぶや　しんじゅく　あきはばら" />
+        </div>
         <button id="try-honja" onclick="tryHonja()">Try HONJA!</button>
       </div>
       <div class="result container">
