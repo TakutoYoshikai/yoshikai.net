@@ -147,12 +147,26 @@ table tr:nth-child(odd) {
 
 .speak-button {
   height: auto;
-  padding: 2px 8px;
+  width: 28px;
+  padding: 6px 8px;
   margin-right: 8px;
-  font-size: 1.0rem;
   vertical-align: middle;
   box-shadow: none;
   border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speak-button::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid currentColor;
+  margin-left: 2px;
 }
 
 #source a {

@@ -117,7 +117,6 @@ function renderResultTable(result) {
       speakButton.type = "button";
       speakButton.className = "speak-button";
       speakButton.setAttribute("aria-label", "発音を再生");
-      speakButton.textContent = "🔊";
       speakButton.addEventListener("click", () => speakText(language, resultText));
       resultCell.appendChild(speakButton);
     }
